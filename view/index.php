@@ -8,12 +8,13 @@
 </head>
 <body>
     <div class="container">
-	<form action="verificaLogin.php" method="post" accept-charset="utf-8" class="form-login" >
+        
+        <form action="../controller/verificaCadastro.php" method="POST" accept-charset="utf-8" class="form-login" >
 		<h2 class="form-login-heading"> Entre com o usuário</h2>
-		<label for="inputEmail">E-mail</label>
-		<input type="email" id="inputEmail" class="form-control" placeholde="Email" required autofocus>
+		<label for="email">E-mail</label>
+		<input type="email" id="email" class="form-control" placeholde="Email" required autofocus>
 		<label for="inputPassword">Senha</label>
-		<input type="password" id="inputSenha" class="form-control" placeholde="Senha" required >
+		<input type="password" id="Senha" class="form-control" placeholde="Senha" required >
 		<div class="checkbox">
 			<label>
 			<input type="checkbox" value= "esqueci"> Esqueci a senha
