@@ -1,3 +1,7 @@
+<?php include_once("../model/conexao.php");
+include_once ("../model/conectar.php");
+$db =new $this ->conectar();?>
+
 <html lang="pt-br">
 <head> 
 	<meta charset="utf-8">
