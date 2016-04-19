@@ -1,23 +1,52 @@
 
 <?php
-class Database{
-    public static $db;
-    public function instance(){
-        if(!self::$db){
-            self::$db = $this ->connect();
-       } 
-       return self::$db;
-    }
-    
-    private function connect(){
-   
-    $db= new PDO("mysql:host=localhost;bd=learnappbd","root", "");    
-    $db ->setAttribute(PDO::ATTR_ERRMODE,ERRMODE_EXCEPTION);
-    return $db;
-    }
+class Database
+{
+ 
+    protected static $db;
+
+
+    private function __construct()
+    {
+     
+        $db_host = "localhost";
+        $db_nome = "learnappbd";
+        $db_usuario = "root";
+        $db_senha = "";
+       
+
+        
+        try
+        {
+            
+            self::$db = new PDO("$db_driver:host=$db_host; dbname=$db_nome", $db_usuario, $db_senha);
+            
+            self::$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            
+            self::$db->exec('SET NAMES utf8');
+        }
+		
+        catch (PDOException $e)
+        {
+		    echo $e->getMessage ();
 }
-$db = new Database();
-$bancodedados = $db ->instance();
-$bancodedados -> query("INSERT INTO usuarios (nome) values ('teste')");
+            
+        }
+		
+    }
+
+    
+         function conexao()
+    {
+       
+        if (!self::$db)
+        {
+            new Database();
+			
+        }
+
+       
+    }
+
 
 ?>
