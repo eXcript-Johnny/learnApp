@@ -1,33 +1,23 @@
-<html>
 
-<head></head>
-
-
-<body>
 <?php
+class Database{
+    public static $db;
+    public function instance(){
+        if(!self::$db){
+            self::$db = $this ->connect();
+       } 
+       return self::$db;
+    }
+    
+    private function connect(){
+   
+    $db= new PDO("mysql:host=localhost;bd=learnappbd","root", "");    
+    $db ->setAttribute(PDO::ATTR_ERRMODE,ERRMODE_EXCEPTION);
+    return $db;
+    }
+}
+$db = new Database();
+$bancodedados = $db ->instance();
+$bancodedados -> query("INSERT INTO usuarios (nome) values ('teste')");
 
-/*$host = 'localhost';
-$user = 'root';
-$pass = '';
-$bd = 'learnappbd';
- */
-//$cn = mysqli_connect($host, $user, $pass, $bd) or die (mysql_error());
- //$sql= mysql_select_bd($bd) or die (mysql_error());
-// echo "Voce esta conectado";
-
-if(mysqli_connect('localhost','root', '', 'learnappbd'))
-{
-	echo "conexao realizada ";
-		
-	
-} else 
-	
-	echo "erro na conexão";
-	
-	
 ?>
-</body>
-
-
-</html>
-
