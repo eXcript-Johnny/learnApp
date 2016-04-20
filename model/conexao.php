@@ -1,10 +1,10 @@
 <?php
 class Conexao{
 	
-	cont $host = "localhost";
-        cont $user = "root";
-	cont $password = "";
-        cont $base = "learnappbd";
+	const $host = "localhost";
+        const $user = "root";
+	const $password = "";
+        const $base = "learnappbd";
     
 	function conectar{
 
