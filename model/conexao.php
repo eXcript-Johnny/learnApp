@@ -10,6 +10,12 @@ class Conexao{
     
     
 	function conectar(){
+		
+	self::host; 
+	self::user;
+	self::password;
+	self::base;
+	
 	
 	$pdo = new PDO('mysql:host=$host;dbname=$base',$user,$password);
 	$pdo = setAttribute(PDO::ATTR_ERRNOME, PDO::ARR_EXPECTION);
