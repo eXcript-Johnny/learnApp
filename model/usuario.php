@@ -10,7 +10,7 @@ class usuario extends Conexao{
     
     
     public function selectUsuario(){
-        $query        = "montar a query where email = :email";
+        $query        =  new $pdo->prepare("SELECT * FROM usuarios WHERE email = :email AND senha = :senha");
         $consultation = $this->conexao->prepare($query);
         $consultation->bindValue(":email", $this->email);
         $consultation->execute();
