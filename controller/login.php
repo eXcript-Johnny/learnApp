@@ -16,6 +16,9 @@ if($email && $senha){
         echo "erro";
     } else {
         // Criar a session (logado)
+        session_start();
+        $_session['logado'];
+        
         echo "sucesso";
     }
     
