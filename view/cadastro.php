@@ -51,10 +51,7 @@
                 <input type="password" id="senha" class="form-control" placeholde="Senha" required >
                 
                 <button type="submit" class="btn btn-lg btn-primary btn-block"  > Confirmar Cadastrar </button>
-                <!--<button type="submit" class="btn btn-lg btn-primary btn-block" href="login.php" > Voltar</button>-->
-		 
-    
-
+           
 
 </body>
 
