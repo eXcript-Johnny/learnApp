@@ -1,4 +1,6 @@
 <?php
+include_once('conexao.php');
+
 class usuario extends Conexao{
     public $conexao;
     public $usuario;
