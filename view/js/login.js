@@ -39,5 +39,5 @@ var evento = {
 };
 
 $(document).ready(function(){
-    evento.init()
+    evento.init();
 });
