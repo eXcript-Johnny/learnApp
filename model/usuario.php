@@ -21,7 +21,9 @@ class usuario extends Conexao{
        
         $query       = "insert into usuarios nome,email,senha,telefone  values nome=:nome, email=:email, senha=:senha";
         $consultation = $this->conexao->prepare($query);
-        $consultation->bindValue(":email", $this->email);
+        $consultation->bindValue(":nome", $this->nome);
+        $consultation->bindValue(":email",$this->email);
+        $consultation->bindValue(":telefone",$this->telefone);
         $consultation->bindValue(":senha",$this->senha);
         $consultation->execute();
         return $consultation->fetchObject(); 
