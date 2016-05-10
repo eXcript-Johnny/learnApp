@@ -36,3 +36,19 @@ body{
 	border-bottom-rigth-radius: 0;
 	border-bottom-left-radius: 0;
 }
+a:link{
+    text-decoration: none;
+    border: 1px  ;
+    color: white;
+}
+a:visited{
+    text-decoration: none;
+    border: 1px;
+    color: white;
+}
+a:hover{
+    text-decoration: none;
+    border: dashed 1px white;
+    color: white;
+    background-color: gray;
+}
