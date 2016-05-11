@@ -4,13 +4,13 @@
         <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title> LearnApp Login </title>
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/estilo.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/navBar.css">
-        <script type="text/javascript" src="js/jquery-1.12.3.js"></script>
-        <script type="text/javascript" src="js/login.js"></script>
-        <script type="text/javascript" src="js/cadastro.js"></script>
+        <link rel="stylesheet" href="view/css/bootstrap.css">
+        <link rel="stylesheet" href="view/css/estilo.css">
+        <link rel="stylesheet" href="view/css/bootstrap.min.css">
+        <link rel="stylesheet" href="view/css/navBar.css">
+        <script type="text/javascript" src="view/js/jquery-1.12.3.js"></script>
+        <script type="text/javascript" src="view/js/login.js"></script>
+       
     </head>
     
     <body>
