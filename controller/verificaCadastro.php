@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<?php require_once ('../model/conexao.php')  ?>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-    </head>
-    <body>
-        <?php 
+<?php 
       
-		$nome = $_POST['nome'];
+	$nome = $_POST['nome'];
         $email =$_POST['email'];
         $telefone =$_POST['telefone'];
         $senha =$_POST['senha'];
@@ -23,6 +15,3 @@
 	
 	
 	
-        ?>
-    </body>
-</html>
